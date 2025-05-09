@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for New Pass - Tollgate Management System</title>
+    <link rel="stylesheet" type="text/css" href="passstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apply for New Pass</h1>
+        
+        <form action="PassManagementServlet" method="post" class="pass-form">
+            <input type="hidden" name="action" value="applyPass">
+            
+            <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" name="vehicleNumber" required placeholder="Enter vehicle registration number">
+            </div>
+            
+            <div class="form-group">
+                <label for="passType">Pass Type:</label>
+                <select id="passType" name="passType" required>
+                    <option value="">Select Pass Type</option>
+                    <option value="DAILY">Daily Pass (₹100)</option>
+                    <option value="MONTHLY">Monthly Pass (₹2,000)</option>
+                    <option value="QUARTERLY">Quarterly Pass (₹5,500)</option>
+                    <option value="YEARLY">Yearly Pass (₹20,000)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <script>
+                    // Set minimum date to today
+                    document.getElementById('startDate').min = new Date().toISOString().split('T')[0];
+                </script>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Apply for Pass</button>
+                <a href="PassManagementServlet" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
