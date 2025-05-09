@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>payment Form</title>
+	<link rel="stylesheet" href="paystyle.css">
+
+</head>
+<body>
+<div class="container">
+	<h1>Confirm Your Payment</h1>
+	<div class="first-row">
+		<div class="owner">
+			<h3>Owner</h3>
+			<div class="input-field">
+				<input type="text">
+			</div>
+		</div>
+		<div class="cvv">
+	        <h3>CVV</h3>
+	
+			<div class="input-field">
+				<input type="password">
+			</div>
+		</div>
+	</div>
+		<div class="second-row">
+		<div class="card-number">
+			<h3>Card Number</h3>
+			<div class="input-field">
+				<input type="text">
+			</div>
+		</div>
+	</div>
+		<div class="third-row">
+			<h3>Card Validty</h3>
+			<div class="selection">
+				<div class="date">
+					<select name="months" id="months">
+						<option value="jan">jan</option>
+						<option value="feb">feb</option>
+						<option value="mar">mar</option>
+						<option value="apr">apr</option>
+						<option value="may">may</option>
+						<option value="jun">jun</option>
+						<option value="jul">jul</option>
+						<option value="aug">aug</option>
+						<option value="sep">sep</option>
+						<option value="oct">oct</option>
+						<option value="nov">nov</option>
+						<option value="dec">dec</option>
+					</select>
+					<select name="years" id="years">
+						<option value="2022">2022</option>
+						<option value="2021">2021</option>
+						<option value="2020">2020</option>
+						<option value="2019">2019</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+
+					</select>
+				</div>
+			<div class="cards">
+				<img align="right" src="mc.png" alt="">
+				<img align="right" src="vi.png" alt="">
+				<img align="right" src="pp.png" alt="">
+			</div>
+		</div>
+	</div>
+	<a href="DisplayPaymentStatus.java">Confirm</a>
+
+</div>
+		
+</body>
+</html>

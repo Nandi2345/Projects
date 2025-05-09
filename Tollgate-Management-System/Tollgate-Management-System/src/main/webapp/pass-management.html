@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pass Management - Tollgate Management System</title>
+    <link rel="stylesheet" type="text/css" href="passstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pass Management</h1>
+        
+        <div class="action-buttons">
+            <a href="PassManagementServlet?action=new" class="btn btn-primary">Apply for New Pass</a>
+            <a href="UserWelcomeServlet" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+        
+        <div id="pass-content">
+            <!-- This div will be populated by the PassManagementServlet -->
+            <p>Loading your passes...</p>
+            <script>
+                // Redirect to the servlet to load pass data
+                window.location.href = "PassManagementServlet";
+            </script>
+        </div>
+    </div>
+</body>
+</html>
